@@ -1,0 +1,39 @@
+[
+    {
+        "title": "320x50 Banner",
+        "id": 15,
+        "adType": 2,
+        "type": "Banner",
+        "dimension": "{320,50}"
+    },
+    {
+        "title": "300x250 Rectangle",
+        "id": 10,
+        "adType": 3,
+        "type": "Banner",
+        "dimension": "{300,250}"
+    },
+    {
+        "title": "468x60 Tablet Banner",
+        "id": 12,
+        "idiom": "Pad",
+        "adType": 4,
+        "type": "Banner",
+        "dimension": "{468,60}"
+    },
+    {
+        "title": "728x90 Leaderboard Portrait",
+        "id": 11,
+        "idiom": "Pad",
+        "adType": 5,
+        "type": "Banner",
+        "dimension": "{728,90}"
+    },
+    {
+        "idiom": "Pad",
+        "dimension": "{1024,768}",
+        "type": "Interstitial",
+        "id": 16,
+        "title": "Full Screen"
+    }
+]
