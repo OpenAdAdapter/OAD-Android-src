@@ -7,8 +7,11 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import android.graphics.Color;
+import android.os.Handler;
+import android.os.Looper;
 import android.util.Log;
 import android.view.Gravity;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 
@@ -24,6 +27,7 @@ public class AdmobBannerAdapter implements BannerAdapter {
 
 	private OpenAdAdapter oad;
 	private boolean top;
+	Handler handler = new Handler(Looper.getMainLooper());
 
 	public class BannerListerner extends AdListener {
 
@@ -65,6 +69,18 @@ public class AdmobBannerAdapter implements BannerAdapter {
 			oad.reportBannerHeightInPixels(pixels);
 
 			// adView.setBackgroundColor(Color.BLACK);
+			
+//			adView.setVisibility(View.INVISIBLE);
+//			adView.setVisibility(View.VISIBLE);
+			
+			handler.postDelayed(new Runnable(){
+
+				@Override
+				public void run() {
+					Log.i("OAD", "admob requestLayout");
+					//adView.invalidate();
+					oad.getActivity().getWindow().getDecorView().getRootView().requestLayout();
+				}}, 1000);
 		}
 
 		public void onAdFailedToLoad(int errorCode) {

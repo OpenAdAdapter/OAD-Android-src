@@ -57,9 +57,9 @@ public class InmobiBannerAdapter implements BannerAdapter {
 		public void onBannerRequestSucceeded(IMBanner arg0) {
 			Log.i("OAD", "inmobi banner onBannerRequestSucceeded");
 			bBannerShown = true;
-			float points = banner.getHeight();
+			float pixels = banner.getHeight();
 //			float pixels = Util.convertDpToPixel(points, oad.getActivity());
-			float pixels = Util.convertPixelsToDp(points, oad.getActivity());
+			float points = Util.convertPixelsToDp(pixels, oad.getActivity());
 			
 			if(!top){
 				points = -points;

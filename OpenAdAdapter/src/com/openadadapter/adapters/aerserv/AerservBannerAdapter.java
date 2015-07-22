@@ -51,9 +51,9 @@ public class AerservBannerAdapter implements BannerAdapter {
 				Log.d("OAD", msg);
 				hasAd = true;
 				
-				float points = banner.getHeight();
+				float pixels = banner.getHeight();
 //				float pixels = Util.convertDpToPixel(points, oad.getActivity());
-				float pixels = Util.convertPixelsToDp(points, oad.getActivity());
+				float points = Util.convertPixelsToDp(pixels, oad.getActivity());
 				
 				if(!top){
 					points = -points;
