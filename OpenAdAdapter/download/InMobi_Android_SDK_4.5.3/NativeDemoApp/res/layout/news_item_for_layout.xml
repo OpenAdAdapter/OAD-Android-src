@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp" >
+
+    <ImageView
+        android:id="@+id/imgNewsIcon"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/txtNewsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/imgNewsIcon"
+        android:text="News Title" />
+    
+    <TextView
+        android:id="@+id/sponsored"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Sponsored"
+        android:textSize="10sp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/tertiary_text_dark" />
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+[
+    {
+        "title": "320x50 Banner",
+        "id": 15,
+        "adSlotID": "3061841000154108130",
+        "adType": 2,
+        "type": "Banner",
+        "dimension": "{320,50}"
+    },
+    {
+        "title": "300x250 Rectangle",
+        "id": 10,
+        "adSlotID": "4444643263316435045",
+        "adType": 3,
+        "type": "Banner",
+        "dimension": "{300,250}"
+    },
+    {
+        "title": "468x60 Tablet Banner",
+        "id": 12,
+        "idiom": "Pad",
+        "adSlotID": "7435703164562123477",
+        "adType": 4,
+        "type": "Banner",
+        "dimension": "{468,60}"
+    },
+    {
+        "title": "728x90 Leaderboard Portrait",
+        "id": 11,
+        "idiom": "Pad",
+        "adSlotID": "2259034487799289344",
+        "adType": 5,
+        "type": "Banner",
+        "dimension": "{728,90}"
+    },
+    {
+        "title": "1024x90 Leaderboard Landscape",
+        "id": 14,
+        "idiom": "Pad",
+        "adSlotID": "1297194960842149551",
+        "adType": 5,
+        "type": "Banner",
+        "dimension": "{1024,90}"
+    },
+    {
+        "idiom": "Pad",
+        "dimension": "{1024,768}",
+        "adSlotID": "8489510016168133901",
+        "type": "Interstitial",
+        "id": 16,
+        "title": "Full Screen"
+    }
+]

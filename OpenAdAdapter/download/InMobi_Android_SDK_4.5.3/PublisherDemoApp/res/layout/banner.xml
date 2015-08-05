@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.inmobi.monetization.IMBanner
+        android:id="@+id/bannerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    />
+
+	<RelativeLayout
+	    android:id="@+id/bannerRelativeLayout"
+	    android:layout_width="wrap_content"
+	    android:layout_height="52dp"
+	    android:layout_gravity="center" >
+
+	    <TextView
+	        android:id="@+id/bannerText"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentLeft="true"
+	        android:paddingTop="25px"
+	        android:text="@string/loading" />
+
+	    <ProgressBar
+	        android:id="@+id/bannerProgress"
+	        style="?android:attr/progressBarStyleSmall"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignTop="@+id/bannerText"
+	        android:layout_centerHorizontal="true" />
+
+	    <TextView
+	        android:id="@+id/bannerCounter"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBottom="@+id/bannerProgress"
+	        android:layout_centerHorizontal="true"
+	        android:paddingTop="15px"
+	        android:text="@string/counter" />
+
+	</RelativeLayout>
+
+</LinearLayout>
